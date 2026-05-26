@@ -375,11 +375,11 @@ The folder contains checkpoints, logs, optional visualizations, and exported `.m
 If this code is useful for your research, please cite:
 
 ```bibtex
-@article{shi2024compression,
+@article{shi2025compression,
   title={Compression as Restoration: A Unified Implicit Approach to Self-Supervised Hyperspectral Image Representation},
   author={Shi, Junqi and Zhang, Qirui and Lu, Ming and Ma, Zhan},
   journal={IEEE Journal of Selected Topics in Signal Processing},
-  year={2024},
+  year={2025},
   publisher={IEEE}
 }
 ```
@@ -388,8 +388,3 @@ If this code is useful for your research, please cite:
 
 - Junqi Shi: junqishi@smail.nju.edu.cn
 - Qirui Zhang: qiruizhang@smail.nju.edu.cn
-- Zhan Ma: mazhan@nju.edu.cn
-
-## License
-
-Please add a license file before publishing the repository. If you want others to freely use and modify the code, MIT or Apache-2.0 are common choices.
