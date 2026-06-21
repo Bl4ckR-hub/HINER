@@ -1,2 +1,1 @@
-from .HinerArch import HINER, HINERDecoder, TransformInput
-from .SpectralFormer import ViT
+from .HinerArch import HINER, HINERDecoder

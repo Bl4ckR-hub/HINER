@@ -296,7 +296,16 @@ def psnr_fn_batch(output_list, gt):
 
 
 def msssim_fn_single(output, gt):
-    msssim = ms_ssim(output.float().detach(), gt.detach(), data_range=1, size_average=False)
+    # ms-ssim needs smaller_side > (win_size-1)*2**4 (4 downsamplings); shrink the
+    # window for small images (e.g. 128px HySpecNet patches), keep 11 for larger scenes.
+    smaller_side = min(output.shape[-2:])
+    win_size = 11
+    while win_size > 3 and smaller_side <= (win_size - 1) * (2 ** 4):
+        win_size -= 2
+    msssim = ms_ssim(
+        output.float().detach(), gt.detach(),
+        data_range=1, size_average=False, win_size=win_size,
+    )
     return msssim.cpu()
 
 def msssim_fn_batch(output_list, gt):
