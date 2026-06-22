@@ -1,0 +1,17 @@
+[HINER2D] cube=(202,128,128) train_pixels=16384 mask=none -> output/hiner2d/sweep_seed2/fclen101_fcdim128_dec2_blk1_1_e800_b4096_L2_q8_mask-none
+[HINER2D] params: 0.4180 M  (encoder+decoder+head, all stored)
+[14:40:19] epoch 1/800 lr 1.08e-04 train_PSNR 12.41
+[14:46:53] epoch 800/800 lr 2.97e-10 train_PSNR 41.66
+           eval: psnr_db 41.6639 | sam_rad 0.0331 | rmse 0.0083
+
+[HINER2D] done in 0:06:38.257962
+[HINER2D] results -> output/hiner2d/sweep_seed2/fclen101_fcdim128_dec2_blk1_1_e800_b4096_L2_q8_mask-none/results.json
+{
+  "psnr_db": 41.59642028808594,
+  "sam_rad": 0.03318034112453461,
+  "rmse": 0.008321004919707775,
+  "bits_per_param": 7.7360298743830995,
+  "bits_per_param_with_overhead": 7.859355002308519,
+  "bits_per_pixel": 0.9926806157178217,
+  "num_quant_params": 418017
+}

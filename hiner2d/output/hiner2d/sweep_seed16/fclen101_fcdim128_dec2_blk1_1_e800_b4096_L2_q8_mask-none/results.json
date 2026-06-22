@@ -1,0 +1,40 @@
+{
+  "sample": {
+    "data_path": "/faststorage/hyspecnet-11k/patches/ENMAP01-____L2A-DT0000004990_20221104T023045Z_004_V010110_20221118T202506Z/ENMAP01-____L2A-DT0000004990_20221104T023045Z_004_V010110_20221118T202506Z-Y09181045_X06690796/ENMAP01-____L2A-DT0000004990_20221104T023045Z_004_V010110_20221118T202506Z-Y09181045_X06690796-DATA.npy",
+    "vid": "sweep_seed16",
+    "num_bands": 202,
+    "image_hw": [
+      128,
+      128
+    ],
+    "train_pixels": 16384,
+    "mask_mode": "none"
+  },
+  "model": {
+    "params_M": 1.326184,
+    "fc_len": 101,
+    "fc_dim": 128,
+    "dec_strds": [
+      2
+    ],
+    "quant_bit": 8
+  },
+  "metrics_full_precision": {
+    "psnr_db": 42.74881362915039,
+    "sam_rad": 0.029327401891350746,
+    "rmse": 0.007287110202014446
+  },
+  "metrics_quantized": {
+    "psnr_db": 42.6780891418457,
+    "sam_rad": 0.02939443849027157,
+    "rmse": 0.007346687838435173
+  },
+  "bitstream": {
+    "bits_per_param": 7.663505715274589,
+    "bits_per_param_with_overhead": 7.720040899332897,
+    "bits_per_pixel": 3.0935116003055385,
+    "num_quant_params": 1326183
+  },
+  "epochs": 800,
+  "train_time": "0:06:40.820704"
+}

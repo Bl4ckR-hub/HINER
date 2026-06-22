@@ -1,0 +1,25 @@
+[HINER2D] cube=(202,128,128) train_pixels=16384 mask=none -> output/hiner2d/long_seed16/fclen101_fcdim128_dec2_blk1_1_e2500_b2048_L2_q8_mask-none
+[HINER2D] params: 1.3262 M  (encoder+decoder+head, all stored)
+[15:08:41] epoch 1/2500 lr 1.03e-04 train_PSNR 13.32
+           eval: psnr_db 41.5302 | sam_rad 0.0270 | rmse 0.0084
+[15:13:05] epoch 501/2500 lr 9.70e-04 train_PSNR 40.98
+           eval: psnr_db 45.5169 | sam_rad 0.0191 | rmse 0.0053
+[15:17:30] epoch 1001/2500 lr 7.49e-04 train_PSNR 45.50
+           eval: psnr_db 47.8096 | sam_rad 0.0159 | rmse 0.0041
+[15:21:57] epoch 1501/2500 lr 4.13e-04 train_PSNR 47.80
+           eval: psnr_db 49.4209 | sam_rad 0.0141 | rmse 0.0034
+[15:26:23] epoch 2001/2500 lr 1.17e-04 train_PSNR 49.40
+[15:30:49] epoch 2500/2500 lr 7.62e-12 train_PSNR 49.67
+           eval: psnr_db 49.6715 | sam_rad 0.0137 | rmse 0.0033
+
+[HINER2D] done in 0:22:09.762466
+[HINER2D] results -> output/hiner2d/long_seed16/fclen101_fcdim128_dec2_blk1_1_e2500_b2048_L2_q8_mask-none/results.json
+{
+  "psnr_db": 49.43755340576172,
+  "sam_rad": 0.013900053687393665,
+  "rmse": 0.003373675048351288,
+  "bits_per_param": 7.544586229803881,
+  "bits_per_param_with_overhead": 7.607346799046587,
+  "bits_per_pixel": 3.048353742844988,
+  "num_quant_params": 1326183
+}
